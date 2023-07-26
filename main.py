@@ -1,8 +1,5 @@
 import pygame
-import neat
 import os
-import random
-import time
 
 from Bird import Bird
 from Pipe import Pipe
