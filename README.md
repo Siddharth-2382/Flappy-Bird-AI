@@ -55,3 +55,12 @@ NEAT (NeuroEvolution of Augmenting Topologies) is a method of evolving artificia
 3. The genomes with the highest fitness scores are selected to create the next generation. These genomes undergo mutation and crossover to create offspring, introducing new genetic material to potentially improve their performance.
 4. The process of evaluation, selection, and reproduction is repeated for multiple generations until a bird successfully reaches a score of 100 or higher.
 5. The winning genome with the highest fitness score is saved as `winner_genome.pkl`, which is then used by the `AI_mode.py` script to demonstrate the AI playing the game automatically.
+
+
+## Training Mode Demo
+
+https://github.com/Siddharth-2382/Flappy-Bird-AI/assets/94699055/fc11a58f-8a4a-450c-8f2a-554b38da3c66
+
+## AI Mode Demo
+
+https://github.com/Siddharth-2382/Flappy-Bird-AI/assets/94699055/4d2bd3a8-ced7-42ff-9e5b-39f860f4fc80
