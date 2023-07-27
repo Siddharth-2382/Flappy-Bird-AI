@@ -31,8 +31,10 @@ def draw_window(win, bird, pipes, base, score, gameover):
     bird.draw(win)
 
     if gameover:
-        text = GAMEOVER_FONT.render("GAMEOVER ", 1, (0, 0, 0))
-        win.blit(text, (WIN_WIDTH - (WIN_WIDTH/8) - text.get_width(), WIN_HEIGHT/2 - 50))
+        text = GAMEOVER_FONT.render("GAMEOVER", 1, (0, 0, 0))
+        win.blit(text, (WIN_WIDTH - (WIN_WIDTH/8) - text.get_width(), WIN_HEIGHT / 2 - 50))
+        text = STAT_FONT.render("PRESS 'R' to Restart", 1, (0, 0, 0))
+        win.blit(text, (WIN_WIDTH - (WIN_WIDTH / 6) - text.get_width(), WIN_HEIGHT / 4 - 50))
     pygame.display.update()
 
 
@@ -56,6 +58,9 @@ def main():
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_SPACE:
                     bird.jump()
+                if paused:
+                    if event.key == pygame.K_r:
+                        main()
 
         if not paused:
             bird.move()
