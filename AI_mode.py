@@ -66,6 +66,10 @@ def main():
                 pygame.quit()
                 quit()
 
+            if event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_r:
+                    main()
+
         pipe_ind = 0
         if bird:
             if len(pipes) > 1 and bird.x > pipes[0].x + pipes[0].PIPE_TOP.get_width():
